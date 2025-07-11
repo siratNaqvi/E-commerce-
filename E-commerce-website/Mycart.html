@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="header-top">
+        <div class="brand">Brand</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="contact.html"><i class="fas fa-comment"></i> Message</a></li>
+                <li><a href="items.html"><i class="fas fa-box"></i> Orders</a></li>
+                <li><a href="Mycart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> My cart (3)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cart-page-container">
+        <h1 class="page-title">My cart (<span id="cart-item-count">3</span>)</h1>
+
+        <div class="cart-content">
+            <div class="cart-items-section">
+                <div class="cart-item">
+                    <img src="clothes/1.jpg" alt="T-shirt"
+                        class="item-image">
+                    <div class="item-details">
+                        <div class="item-name">T-shirts with multiple colors, for men and lady</div>
+                        <div class="item-meta">Size: medium, Color: blue, Material: Plastic</div>
+                        <div class="item-seller">Seller: Artel Market</div>
+                        <div class="item-actions">
+                            <button class="action-btn remove-btn">Remove</button>
+                            <button class="action-btn save-later-btn">Save for later</button>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <label for="qty1">Qty:</label>
+                        <select id="qty1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="item-price">$78.99</div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="clothes/5.jpg" alt="Bag" class="item-image">
+                    <div class="item-details">
+                        <div class="item-name">T-shirts with multiple colors, for men and lady</div>
+                        <div class="item-meta">Size: medium, Color: blue, Material: Plastic</div>
+                        <div class="item-seller">Seller: Best factory LLC</div>
+                        <div class="item-actions">
+                            <button class="action-btn remove-btn">Remove</button>
+                            <button class="action-btn save-later-btn">Save for later</button>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <label for="qty2">Qty:</label>
+                        <select id="qty2">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="item-price">$39.00</div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="interior/6.jpg" alt="Shirt" class="item-image">
+                    <div class="item-details">
+                        <div class="item-name">T-shirts with multiple colors, for men and lady</div>
+                        <div class="item-meta">Size: medium, Color: blue, Material: Plastic</div>
+                        <div class="item-seller">Seller: Artel Market</div>
+                        <div class="item-actions">
+                            <button class="action-btn remove-btn">Remove</button>
+                            <button class="action-btn save-later-btn">Save for later</button>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <label for="qty3">Qty:</label>
+                        <select id="qty3">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="item-price">$170.50</div>
+                </div>
+
+                <div class="cart-actions-bottom">
+                    
+                    <button class="btn back-to-shop-btn"><i class="fas fa-arrow-left"></i> Back to shop</button>
+                    <button class="btn remove-all-btn">Remove all</button>
+                </div>
+            </div>
+
+            <div class="order-summary-section">
+                <div class="coupon-section">
+                    <label for="coupon">Have a coupon?</label>
+                    <div class="coupon-input-group">
+                        <input type="text" id="coupon" placeholder="Add coupon">
+                        <button class="btn apply-btn">Apply</button>
+                    </div>
+                </div>
+
+                <table class="summary-table">
+                    <tr>
+                        <td>Subtotal:</td>
+                        <td class="amount">$1403.97</td>
+                    </tr>
+                    <tr>
+                        <td>Discount:</td>
+                        <td class="amount discount">-$60.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax:</td>
+                        <td class="amount tax">+$14.00</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td>Total:</td>
+                        <td class="amount total">$1357.97</td>
+                    </tr>
+                </table>
+
+                <button class="btn checkout-btn">Checkout</button>
+
+                <!-- <div class="https://cdn-icons-png.flaticon.com/128/196/196539.png">
+                    <img src="https://cdn-icons-png.flaticon.com/128/39/39134.png" alt="Visa">
+                    <img src="https://cdn-icons-png.flaticon.com/128/11378/11378185.png" alt="MasterCard">
+                    <img src="https://cdn-icons-png.flaticon.com/128/174/174861.png" alt="American Express">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5977/5977576.png" alt="PayPal">
+                </div> -->
+            </div>
+        </div>
+
+        <div class="trust-icons-section">
+            <div class="trust-item">
+                <i class="fas fa-shield-alt"></i>
+                <p>Secure payment</p>
+                <span>Have you ever finally just</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-headset"></i>
+                <p>Customer support</p>
+                <span>Have you ever finally just</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-truck"></i>
+                <p>Free delivery</p>
+                <span>Have you ever finally just</span>
+            </div>
+        </div>
+
+        <div class="saved-for-later-section">
+            <h2>Saved for later</h2>
+            <div class="saved-items-grid">
+                <div class="small-product-card">
+                    <img src="tech/2.jpg"
+                        alt="GoPro HERO6 4K Action Camera">
+                    <div class="card-title">GoPro HERO6 4K Action Camera - Black</div>
+                    <div class="card-price">$99.50</div>
+                    <button class="move-to-cart-btn"><i class="fas fa-shopping-cart"></i> Move to cart</button>
+                </div>
+                <div class="small-product-card">
+                    <img src="tech/4.jpg"
+                        alt="GoPro HERO6 4K Action Camera">
+                    <div class="card-title">GoPro HERO6 4K Action Camera - Black</div>
+                    <div class="card-price">$99.50</div>
+                    <button class="move-to-cart-btn"><i class="fas fa-shopping-cart"></i> Move to cart</button>
+                </div>
+                <div class="small-product-card">
+                    <img src="tech/8.jpg"
+                        alt="GoPro HERO6 4K Action Camera">
+                    <div class="card-title">GoPro HERO6 4K Action Camera - Black</div>
+                    <div class="card-price">$99.50</div>
+                    <button class="move-to-cart-btn"><i class="fas fa-shopping-cart"></i> Move to cart</button>
+                </div>
+                <div class="small-product-card">
+                    <img src="tech/7.jpg"
+                        alt="GoPro HERO6 4K Action Camera">
+                    <div class="card-title">GoPro HERO6 4K Action Camera - Black</div>
+                    <div class="card-price">$99.50</div>
+                    <button class="move-to-cart-btn"><i class="fas fa-shopping-cart"></i> Move to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="super-discount-banner">
+            <p>Super discount on more than 100 USD</p>
+            <p>Have you ever really just write dummy info</p>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
