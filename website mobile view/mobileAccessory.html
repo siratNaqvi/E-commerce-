@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+        <html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Product Listing Page</title>
+            <!-- Tailwind CSS CDN -->
+            <script src="https://cdn.tailwindcss.com"></script> 
+            <!-- Link to your custom CSS file -->
+            <link rel="stylesheet" href="styles.css">
+            <!-- Font Awesome for icons -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+           
+        </head>
+        
+        <body class="bg-gray-100 min-h-screen flex flex-col">
+            <header class="main-header">
+                <div class="header-top">
+                    <link rel="stylesheet" href="style.css">
+                    <div class="hamburger-icon" id="hamburgerIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- Overlay (darkens background when menu is open, click to close) -->
+        <div class="overlay" id="menuOverlay"></div>
+        
+        <!-- Side Menu -->
+        <div class="side-menu" id="sideMenu">
+            <div class="menu-header">
+                <div class="user-info">
+                    <i class="far fa-user-circle user-icon"></i>
+                    <div class="auth-links">
+                        <a href="login.html">Sign in</a> <span>|</span> <a href="login.html">Register</a>
+                    </div>
+                </div>
+                <button class="close-btn" id="closeMenuBtn">&times;</button>
+            </div>
+        
+            <ul class="menu-list">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="mobileAccessory.html"><i class="fas fa-list"></i> Categories</a></li>
+                <li><a href="Mycart.html"><i class="far fa-heart"></i> Favorites</a></li>
+                <li><a href="items.html"><i class="fas fa-box"></i> My orders</a></li>
+                <li><a href="#"><i class="fas fa-globe"></i> English | USD</a></li>
+                <li><a href="contact.html"><i class="fas fa-headphones"></i> Contact us</a></li>
+                <li><a href="About.html"><i class="fas fa-building"></i> About</a></li>
+                <li class="separator"></li>
+                <li><a href="#" class="sub-section-link">User agreement</a></li>
+                <li><a href="#" class="sub-section-link">Partnership</a></li>
+                <li><a href="#" class="sub-section-link">Privacy policy</a></li>
+            </ul>
+        </div>
+    
+                    <div class="brand">Brand</div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <button>Search</button>
+                    </div>
+                    <nav class="top-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                        </ul>
+                    </nav>
+                    <div class="user-links">
+                        <a href="index.html">Profile</a>
+                        <a href="contact.html">Message</a>
+                        <a href="items.html">Orders</a>
+                        <a href="Mycart.html">My cart</a>
+                    </div>
+                    <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                        &#9776; </button>
+                </div>
+            
+                <div class="header-bottom">
+                    <nav class="main-nav">
+                        <ul>
+                            <li class="has-dropdown"><a href="mobileAccessory.html">All category</a></li>
+                            <li><a href="index.html">Hot offers</a></li>
+                            <li><a href="Electronics.html">Gift boxes</a></li>
+                            <li><a href="mobileAccessory.html">Projects</a></li>
+                            <li class="has-dropdown"><a href="items.html">Menu item <span class="arrow-down">&#9660;</span></a></li>
+                            <li class="has-dropdown"><a href="contact.html">Help <span class="arrow-down">&#9660;</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="language-ship-options">
+                        <div class="option has-dropdown">
+                            <span>English. USD <span class="arrow-down">&#9660;</span></span>
+                        </div>
+                        <div class="option has-dropdown">
+                            <span>Ship to <span class="arrow-down">&#9660;</span></span>
+                        </div>
+                    </div>
+                </div>
+                </header>
+        
+            <!-- Header/Breadcrumbs -->
+            <header class="bg-white shadow-sm py-4 px-6 md:px-8 lg:px-10">
+                <nav class="text-sm text-gray-600">
+                    <a href="index.html" class="hover:underline">Home</a>
+                    <span class="mx-2">/</span>
+                    <a href="mobileAccessory.html" class="hover:underline">Clothing</a>
+                    <span class="mx-2">/</span>
+                    <a href="Electronics.html" class="hover:underline">Men's wear</a>
+                    <span class="mx-2">/</span>
+                    <a href="Electronics.html">
+                    <span class=" text-gray-800">Summer clothing</span></a>
+                </nav>
+            </header>
+        
+            <!-- Main Content Area -->
+            <main class="flex-grow container mx-auto p-4 md:p-6 lg:p-8 flex flex-col lg:flex-row gap-6">
+        
+                <!-- Sidebar Filters -->
+                <aside class="w-full lg:w-1/4 bg-white p-6 rounded-lg shadow-md flex-shrink-0">
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Category</h2>
+                    <ul class="space-y-2 mb-6 text-gray-700">
+                        <li><a href="#" class="block hover:text-blue-600">Mobile accessory</a></li>
+                        <li><a href="#" class="block hover:text-blue-600">Electronics</a></li>
+                        <li><a href="#" class="block hover:text-blue-600">Smartphones</a></li>
+                        <li><a href="#" class="block hover:text-blue-600">Modern tech</a></li>
+                        <li><a href="#" class="block text-blue-600 hover:underline">See all</a></li>
+                    </ul>
+        
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Brands</h2>
+                    <div class="space-y-2 mb-6">
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2"> Samsung
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2"> Apple
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2"> Huawei
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2"> Poco
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2"> Lenovo
+                        </label>
+                        <a href="#" class="block text-blue-600 hover:underline mt-2">See all</a>
+                    </div>
+        
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Features</h2>
+                    <div class="space-y-2 mb-6">
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2">
+                            Metallic
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2"> Plastic
+                            cover
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2"> 8GB Ram
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2"> Super
+                            power
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2"> Large
+                            Memory
+                        </label>
+                        <a href="#" class="block text-blue-600 hover:underline mt-2">See all</a>
+                    </div>
+        
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Price range</h2>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <input type="number" placeholder="Min"
+                            class="w-1/2 p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-gray-700">
+                        <span class="text-gray-500">-</span>
+                        <input type="number" placeholder="Max"
+                            class="w-1/2 p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-gray-700">
+                    </div>
+                    <button
+                        class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 mb-6">Apply</button>
+        
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Condition</h2>
+                    <div class="space-y-2 mb-6">
+                        <label class="flex items-center text-gray-700">
+                            <input type="radio" name="condition"
+                                class="form-radio rounded-full text-blue-600 focus:ring-blue-500 mr-2" checked> Any
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="radio" name="condition"
+                                class="form-radio rounded-full text-blue-600 focus:ring-blue-500 mr-2"> Refurbished
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="radio" name="condition"
+                                class="form-radio rounded-full text-blue-600 focus:ring-blue-500 mr-2"> Brand new
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="radio" name="condition"
+                                class="form-radio rounded-full text-blue-600 focus:ring-blue-500 mr-2"> Old items
+                        </label>
+                    </div>
+        
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Ratings</h2>
+                    <div class="space-y-2">
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2">
+                            <span class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </span>
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2">
+                            <span class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="far fa-star"></i>
+                            </span>
+                            <span class="ml-2">& Up</span>
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2">
+                            <span class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                            </span>
+                            <span class="ml-2">& Up</span>
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2">
+                            <span class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                            </span>
+                            <span class="ml-2">& Up</span>
+                        </label>
+                        <label class="flex items-center text-gray-700">
+                            <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2">
+                            <span class="star-rating">
+                                <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                            </span>
+                            <span class="ml-2">& Up</span>
+                        </label>
+                    </div>
+                </aside>
+        
+                <!-- Product Listing -->
+                <section class="flex-grow w-full lg:w-3/4">
+                    <div
+                        class="bg-white p-4 rounded-lg shadow-md mb-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-700">
+                        <div class="mb-2 sm:mb-0">
+                            12,911 items in <span class="font-semibold">Mobile accessory</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox rounded text-blue-600 focus:ring-blue-500 mr-2">
+                                Verified only
+                            </label>
+                            <div class="relative">
+                                <select
+                                    class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white focus:border-blue-500">
+                                    <option>Featured</option>
+                                    <option>Price: Low to High</option>
+                                    <option>Price: High to Low</option>
+                                    <option>Newest Arrivals</option>
+                                </select>
+                                
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex space-x-2">
+                                <a href="Electronics.html">
+                                <button class="p-2 border border-gray-300 rounded-md hover:bg-gray-100">
+                                    <i class="fas fa-th-large text-gray-600"></i>
+                                </button></a>
+                                <a href="Electronics.html">
+                                <button class="p-2 border border-gray-300 rounded-md hover:bg-gray-100">
+                                    <i class="fas fa-bars text-gray-600"></i>
+                                </button></a>
+                            </div>
+                        </div>
+                    </div>
+        
+            
+                        <!-- Product Cards Grid - Changed to grid-cols-1 for all screen sizes -->
+                        <div class="grid grid-cols-1 gap-6 p-4 md:p-6 lg:p-8">
+                            <!-- Product Card 1 -->
+                            <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                                <img src="tech/1.jpg" alt="Product Image" class="w-32 h-32 object-cover rounded-md flex-shrink-0">
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-start mb-1">
+                                        <h3 class="text-base font-semibold text-gray-800">Canon Camera EOS 2000, Black 10x zoom</h3>
+                                        <button class="text-gray-400 hover:text-red-500">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center mb-1">
+                                        <span class="text-sm font-semibold text-gray-800 mr-2">$998.00</span>
+                                        <span class="text-xs text-gray-500 line-through mr-2">$1128.00</span>
+                                        <span class="text-xs text-green-600">Free Shipping</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600 mb-2">
+                                        <span class="star-rating mr-2">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                        </span>
+                                        <span>(154 orders)</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-2 line-clamp-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                                    <a href="#" class="text-blue-600 text-sm hover:underline">View details</a>
+                                </div>
+                            </div>
+            
+                            <!-- Product Card 2 -->
+                            <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                                <img src="tech/3.jpg" alt="Product Image" class="w-32 h-32 object-cover rounded-md flex-shrink-0">
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-start mb-1">
+                                        <h3 class="text-base font-semibold text-gray-800">GoPro HERO6 4K Action Camera - Black</h3>
+                                        <button class="text-gray-400 hover:text-red-500">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center mb-1">
+                                        <span class="text-sm font-semibold text-gray-800 mr-2">$998.00</span>
+                                        <span class="text-xs text-gray-500 line-through mr-2"></span>
+                                        <span class="text-xs text-green-600">Free Shipping</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600 mb-2">
+                                        <span class="star-rating mr-2">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                        </span>
+                                        <span>(154 orders)</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-2 line-clamp-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                                    <a href="#" class="text-blue-600 text-sm hover:underline">View details</a>
+                                </div>
+                            </div>
+            
+                            <!-- Product Card 3 -->
+                            <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                                <img src="tech/2.jpg" alt="Product Image" class="w-32 h-32 object-cover rounded-md flex-shrink-0">
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-start mb-1">
+                                        <h3 class="text-base font-semibold text-gray-800">GoPro HERO6 4K Action Camera - Black</h3>
+                                        <button class="text-gray-400 hover:text-red-500">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center mb-1">
+                                        <span class="text-sm font-semibold text-gray-800 mr-2">$998.00</span>
+                                        <span class="text-xs text-gray-500 line-through mr-2"></span>
+                                        <span class="text-xs text-green-600">Free Shipping</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600 mb-2">
+                                        <span class="star-rating mr-2">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                        </span>
+                                        <span>(154 orders)</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-2 line-clamp-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                                    <a href="#" class="text-blue-600 text-sm hover:underline">View details</a>
+                                </div>
+                            </div>
+            
+                            <!-- Product Card 4 -->
+                            <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                                <img src="tech/7.jpg" alt="Product Image" class="w-32 h-32 object-cover rounded-md flex-shrink-0">
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-start mb-1">
+                                        <h3 class="text-base font-semibold text-gray-800">GoPro HERO6 4K Action Camera - Black</h3>
+                                        <button class="text-gray-400 hover:text-red-500">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center mb-1">
+                                        <span class="text-sm font-semibold text-gray-800 mr-2">$998.00</span>
+                                        <span class="text-xs text-gray-500 line-through mr-2"></span>
+                                        <span class="text-xs text-green-600">Free Shipping</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600 mb-2">
+                                        <span class="star-rating mr-2">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                        </span>
+                                        <span>(154 orders)</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-2 line-clamp-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                                    <a href="#" class="text-blue-600 text-sm hover:underline">View details</a>
+                                </div>
+                            </div>
+            
+                            <!-- Product Card 5 -->
+                            <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                                <img src="tech/8.jpg" alt="Product Image" class="w-32 h-32 object-cover rounded-md flex-shrink-0">
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-start mb-1">
+                                        <h3 class="text-base font-semibold text-gray-800">GoPro HERO6 4K Action Camera - Black</h3>
+                                        <button class="text-gray-400 hover:text-red-500">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center mb-1">
+                                        <span class="text-sm font-semibold text-gray-800 mr-2">$998.00</span>
+                                        <span class="text-xs text-gray-500 line-through mr-2"></span>
+                                        <span class="text-xs text-green-600">Free Shipping</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600 mb-2">
+                                        <span class="star-rating mr-2">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                        </span>
+                                        <span>(154 orders)</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-2 line-clamp-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                                    <a href="#" class="text-blue-600 text-sm hover:underline">View details</a>
+                                </div>
+                            </div>
+            
+                            <!-- Product Card 6 -->
+                            <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                                <img src="tech/9.jpg" alt="Product Image" class="w-32 h-32 object-cover rounded-md flex-shrink-0">
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-start mb-1">
+                                        <h3 class="text-base font-semibold text-gray-800">GoPro HERO6 4K Action Camera - Black</h3>
+                                        <button class="text-gray-400 hover:text-red-500">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center mb-1">
+                                        <span class="text-sm font-semibold text-gray-800 mr-2">$998.00</span>
+                                        <span class="text-xs text-gray-500 line-through mr-2"></span>
+                                        <span class="text-xs text-green-600">Free Shipping</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600 mb-2">
+                                        <span class="star-rating mr-2">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                        </span>
+                                        <span>(154 orders)</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-2 line-clamp-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                                    <a href="#" class="text-blue-600 text-sm hover:underline">View details</a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Pagination -->
+                        <div class="p-4 md:p-6 lg:p-8 bg-white rounded-lg shadow-md mt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-700">
+                            <div class="mb-2 sm:mb-0">
+                                <select class="block appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white focus:border-blue-500">
+                                    <option>Show 10</option>
+                                    <option>Show 20</option>
+                                    <option>Show 50</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <button class="p-2 border border-gray-300 rounded-md hover:bg-gray-100">
+                                    <i class="fas fa-chevron-left text-gray-600"></i>
+                                </button>
+                                <a href="#" class="px-3 py-1 border border-blue-600 bg-blue-600 text-white rounded-md">1</a>
+                                <a href="#" class="px-3 py-1 border border-gray-300 rounded-md hover:bg-gray-100">2</a>
+                                <a href="#" class="px-3 py-1 border border-gray-300 rounded-md hover:bg-gray-100">3</a>
+                                <a href="#" class="px-3 py-1 border border-gray-300 rounded-md hover:bg-gray-100">...</a>
+                                <button class="p-2 border border-gray-300 rounded-md hover:bg-gray-100">
+                                    <i class="fas fa-chevron-right text-gray-600"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            
+            </body>
+            </html>
+        
+        <!-- footer section -->
+        <footer class="main-footer">
+            <div class="footer-newsletter">
+                <h3 class="newsletter-heading">Subscribe on our newsletter</h3>
+                <p class="newsletter-tagline">Get daily news on upcoming offers from many suppliers all over the world</p>
+                <div class="newsletter-form">
+                    <div class="input-with-icon">
+                        <input type="email" placeholder="Email">
+                        <i class="fas fa-envelope"></i> </div>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        
+            <div class="footer-content">
+                <div class="footer-brand-info">
+                    <div class="footer-logo">Brand</div>
+                    <p>Best information about the company gies here but now lorem ipsum is</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="https://iconscout.com/free-icon/facebook-209_453255"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+        
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Partnership</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Money Refund</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>For users</h4>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">My Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column footer-app-links">
+                        <h4>Get app</h4>
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/16010/16010800.png" alt="App Store"></a>
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/27/27223.png" alt="Google Play"></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer-copyright">
+                <p>&copy; @ 2023 Ecommerce.</p>
+                <div class="language-selector">
+                    <img src="https://flagpedia.net/data/flags/w580/us.webp" alt="US Flag" class="flag-icon">
+                    <span>English <i class="fas fa-chevron-down"></i></span>
+                </div>
+            </div>
+        </footer>
+<!-- Link to your custom JavaScript file -->
+                <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="logo">Your Company Logo</div>
+        div class="hamburger-icon" id="hamburgerIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- Overlay (darkens background when menu is open, click to close) -->
+        <div class="overlay" id="menuOverlay"></div>
+        
+        <!-- Side Menu -->
+        <div class="side-menu" id="sideMenu">
+            <div class="menu-header">
+                <div class="user-info">
+                    <i class="far fa-user-circle user-icon"></i>
+                    <div class="auth-links">
+                        <a href="login.html">Sign in</a> <span>|</span> <a href="login.html">Register</a>
+                    </div>
+                </div>
+                <button class="close-btn" id="closeMenuBtn">&times;</button>
+            </div>
+        
+            <ul class="menu-list">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="mobileAccessory.html"><i class="fas fa-list"></i> Categories</a></li>
+                <li><a href="Mycart.html"><i class="far fa-heart"></i> Favorites</a></li>
+                <li><a href="items.html"><i class="fas fa-box"></i> My orders</a></li>
+                <li><a href="#"><i class="fas fa-globe"></i> English | USD</a></li>
+                <li><a href="contact.html"><i class="fas fa-headphones"></i> Contact us</a></li>
+                <li><a href="About.html"><i class="fas fa-building"></i> About</a></li>
+                <li class="separator"></li>
+                <li><a href="#" class="sub-section-link">User agreement</a></li>
+                <li><a href="#" class="sub-section-link">Partnership</a></li>
+                <li><a href="#" class="sub-section-link">Privacy policy</a></li>
+            </ul>
+        </div>
+    
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="mobileAccessory.html">Services</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-hero">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you! Whether you have a question about our products, services, or anything else,
+                our team is ready to answer all your questions.</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-section">
+                <h2>Our Contact Information</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Address:</strong> 123 Business Rd, Suite 456, City, Country, ZIP</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><strong>Email:</strong> info@E-commerce.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p><strong>Business Hours:</strong> Mon-Fri: 9:00 AM - 5:00 PM</p>
+                </div>
+
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <div class="map-placeholder">
+                    <!-- Placeholder for an embedded map (e.g., Google Maps iframe) -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.298926950965!2d144.9631379153177!3d-37.81627997975149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b9e6a0d0a5%3A0x50456784629d430!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1678901234567!5m2!1sen!2sau"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2023 E-commerce. All rights reserved.</p>
+    </footer>
+<!-- Link to your custom JavaScript file -->
+                <script src="app.js"></script>
+</body>
+
+</html>

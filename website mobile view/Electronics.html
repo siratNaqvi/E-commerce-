@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <header class="main-header">
+        <div class="header-top">
+            <link rel="stylesheet" href="style.css">
+<div class="hamburger-icon" id="hamburgerIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- Overlay (darkens background when menu is open, click to close) -->
+        <div class="overlay" id="menuOverlay"></div>
+        
+        <!-- Side Menu -->
+        <div class="side-menu" id="sideMenu">
+            <div class="menu-header">
+                <div class="user-info">
+                    <i class="far fa-user-circle user-icon"></i>
+                    <div class="auth-links">
+                        <a href="login.html">Sign in</a> <span>|</span> <a href="login.html">Register</a>
+                    </div>
+                </div>
+                <button class="close-btn" id="closeMenuBtn">&times;</button>
+            </div>
+        
+            <ul class="menu-list">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="mobileAccessory.html"><i class="fas fa-list"></i> Categories</a></li>
+                <li><a href="Mycart.html"><i class="far fa-heart"></i> Favorites</a></li>
+                <li><a href="items.html"><i class="fas fa-box"></i> My orders</a></li>
+                <li><a href="#"><i class="fas fa-globe"></i> English | USD</a></li>
+                <li><a href="contact.html"><i class="fas fa-headphones"></i> Contact us</a></li>
+                <li><a href="About.html"><i class="fas fa-building"></i> About</a></li>
+                <li class="separator"></li>
+                <li><a href="#" class="sub-section-link">User agreement</a></li>
+                <li><a href="#" class="sub-section-link">Partnership</a></li>
+                <li><a href="#" class="sub-section-link">Privacy policy</a></li>
+            </ul>
+        </div>
+    
+
+
+
+
+            <div class="brand">Brand</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+            <div class="user-links">
+                <a href="index.html">Profile</a>
+                <a href="contact.html">Message</a>
+                <a href="items.html">Orders</a>
+                <a href="Mycart.html">My cart</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                &#9776; </button>
+        </div>
+    
+        <div class="header-bottom">
+            <nav class="main-nav">
+                <ul>
+                    <li class="has-dropdown"><a href="#">All category</a></li>
+                    <li><a href="index.html">Hot offers</a></li>
+                    <li><a href="Electronics.html">Gift boxes</a></li>
+                    <li><a href="mobileAccessory.html">Projects</a></li>
+                    <li class="has-dropdown"><a href="items.html">Menu item <span class="arrow-down">&#9660;</span></a></li>
+                    <li class="has-dropdown"><a href="contact.html">Help <span class="arrow-down">&#9660;</span></a></li>
+                </ul>
+            </nav>
+            <div class="language-ship-options">
+                <div class="option has-dropdown">
+                    <span>English. USD <span class="arrow-down">&#9660;</span></span>
+                </div>
+                <div class="option has-dropdown">
+                    <span>Ship to <span class="arrow-down">&#9660;</span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <link rel="stylesheet" href="style.css">
+    <nav class="breadcrumbs">
+        <a href="index.html">Home</a> &gt;
+        <a href="mobileAccessory.html">Clothings</a> &gt;
+        <a href="Electronics.html">Men's wear</a> &gt;
+        <a href="mobileAccessory.html"><span>Summer clothing</span></a>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="filter-section">
+                <h3>Category</h3>
+                <ul>
+                    <li><label><input type="checkbox" checked> Mobile accessory</label></li>
+                    <li><label><input type="checkbox"> Electronics</label></li>
+                    <li><label><input type="checkbox"> Smartphones</label></li>
+                    <li><label><input type="checkbox"> Modern tech</label></li>
+                </ul>
+                <a href="#" class="see-all-link">See all</a>
+            </div>
+
+            <div class="filter-section">
+                <h3>Brands</h3>
+                <ul>
+                    <li><label><input type="checkbox" checked> Samsung</label></li>
+                    <li><label><input type="checkbox" checked> Apple</label></li>
+                    <li><label><input type="checkbox"> Huawei</label></li>
+                    <li><label><input type="checkbox" checked> Pocoo</label></li>
+                    <li><label><input type="checkbox"> Lenovo</label></li>
+                </ul>
+                <a href="#" class="see-all-link">See all</a>
+            </div>
+
+            <div class="filter-section">
+                <h3>Features</h3>
+                <ul>
+                    <li><label><input type="checkbox" checked> Metallic</label></li>
+                    <li><label><input type="checkbox"> Plastic cover</label></li>
+                    <li><label><input type="checkbox"> 8GB Ram</label></li>
+                    <li><label><input type="checkbox"> Super power</label></li>
+                    <li><label><input type="checkbox"> Large Memory</label></li>
+                </ul>
+                <a href="#" class="see-all-link">See all</a>
+            </div>
+
+            <div class="filter-section">
+                <h3>Price range</h3>
+                <p>Range: $50 - $200</p>
+                <input type="range" min="0" max="500" value="50">
+                <input type="range" min="0" max="500" value="200">
+            </div>
+
+            <div class="filter-section">
+                <h3>Condition</h3>
+                <ul>
+                    <li><label><input type="checkbox"> New</label></li>
+                    <li><label><input type="checkbox"> Used</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <h3>Ratings</h3>
+                <ul>
+                    <li><label><input type="checkbox"> 5 stars</label></li>
+                    <li><label><input type="checkbox"> 4 stars & up</label></li>
+                    <li><label><input type="checkbox"> 3 stars & up</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <h3>Manufacturer</h3>
+                <ul>
+                    <li><label><input type="checkbox"> Manuf 1</label></li>
+                    <li><label><input type="checkbox"> Manuf 2</label></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="results-header">
+                <div class="results-count">
+                    12,911 items in Mobile accessory
+                </div>
+                <div class="filter-chips">
+                    <span class="filter-chip">Samsung <span class="remove-chip"><i
+                                class="fas fa-times"></i></span></span>
+                    <span class="filter-chip">Apple <span class="remove-chip"><i class="fas fa-times"></i></span></span>
+                    <span class="filter-chip">Poco <span class="remove-chip"><i class="fas fa-times"></i></span></span>
+                    <span class="filter-chip">Metallic <span class="remove-chip"><i
+                                class="fas fa-times"></i></span></span>
+                    <span class="filter-chip">4 star <span class="remove-chip"><i
+                                class="fas fa-times"></i></span></span>
+                    <span class="filter-chip">3 star <span class="remove-chip"><i
+                                class="fas fa-times"></i></span></span>
+                    <button class="clear-filter-btn">Clear all filter</button>
+                </div>
+                <div class="view-options">
+                    <label>
+                        <input type="checkbox"> Verified only
+                    </label>
+                    <label for="featured-sort">Featured</label>
+                    <select id="featured-sort">
+                        <option value="featured">Featured</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                    </select>
+                    <div class="view-icons">
+                        <a href="mobileAccessory.html">
+                        <button class="active"><i class="fas fa-th-large"></i></button> <button></a>
+                            <a href="mobileAccessory.html">
+                                <i
+                                class="fas fa-bars"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <span class="heart-icon"><i class="far fa-heart"></i></span>
+                    <img src="tech/1.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div class="price">$99.50 <span class="old-price">$128.00</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 7.5
+                        </div>
+                        <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="heart-icon"><i class="far fa-heart"></i></span>
+                    <img src="tech/4.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div class="price">$99.50 <span class="old-price">$128.00</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i> 5.9
+                        </div>
+                        <div class="product-title">GoPro HERO6 4K Action Camera - Blue</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="heart-icon"><i class="far fa-heart"></i></span>
+                    <img src="tech/3.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div class="price">$99.50 <span class="old-price">$128.00</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 7.5
+                        </div>
+                        <div class="product-title">GoPro HERO6 4K Action Camera - Magenta</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="heart-icon"><i class="far fa-heart"></i></span>
+                    <img src="tech/2.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div class="price">$99.50 <span class="old-price">$128.00</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 7.5
+                        </div>
+                        <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <span class="heart-icon"><i class="far fa-heart"></i></span>
+                    <img src="tech/6.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div class="price">$99.50 <span class="old-price">$128.00</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 7.5
+                        </div>
+                        <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <span class="heart-icon"><i class="far fa-heart"></i></span>
+                    <img src="tech/4.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div class="price">$99.50 <span class="old-price">$128.00</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 7.5
+                        </div>
+                        <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <span class="heart-icon"><i class="far fa-heart"></i></span>
+                    <img src="tech/7.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div class="price">$99.50 <span class="old-price">$128.00</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 7.5
+                        </div>
+                        <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <span class="heart-icon"><i class="far fa-heart"></i></span>
+                    <img src="tech/8.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div class="price">$99.50 <span class="old-price">$128.00</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 7.5
+                        </div>
+                        <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <span class="heart-icon"><i class="far fa-heart"></i></span>
+                    <img src="tech/1.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div class="price">$99.50 <span class="old-price">$128.00</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 7.5
+                        </div>
+                        <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <span>Show 10</span>
+                <ul>
+                    <li><button>&lt;</button></li>
+                    <li><button class="active">1</button></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                    <li><button>&gt;</button></li>
+                </ul>
+            </div>
+        </main>
+    </div>
+<!-- footer -->
+
+<footer class="main-footer">
+    <div class="footer-newsletter">
+        <h3 class="newsletter-heading">Subscribe on our newsletter</h3>
+        <p class="newsletter-tagline">Get daily news on upcoming offers from many suppliers all over the world</p>
+        <div class="newsletter-form">
+            <div class="input-with-icon">
+                <input type="email" placeholder="Email">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+    </div>
+
+    <div class="footer-content">
+        <div class="footer-brand-info">
+            <div class="footer-logo">Brand</div>
+            <p>Best information about the company gies here but now lorem ipsum is</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="https://iconscout.com/free-icon/facebook-209_453255"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Partnership</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Money Refund</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>For users</h4>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">My Orders</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-app-links">
+                <h4>Get app</h4>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/16010/16010800.png" alt="App Store"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/27/27223.png" alt="Google Play"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <p>&copy; @ 2023 Ecommerce.</p>
+        <div class="language-selector">
+            <img src="https://flagpedia.net/data/flags/w580/us.webp" alt="US Flag" class="flag-icon">
+            <span>English <i class="fas fa-chevron-down"></i></span>
+        </div>
+    </div>
+    <!-- Link to your custom JavaScript file -->
+                <script src="app.js"></script>
+</footer>
+</body>
+
+</html>
